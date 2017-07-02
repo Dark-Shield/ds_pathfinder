@@ -39,6 +39,7 @@
     <!-- THEME CSS -->
     <link href="/css/theme.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
+    <link href="/css/wyste.css" rel="stylesheet">
     @yield('after-CSSstyles')
 </head>
 
@@ -62,6 +63,7 @@
 
 <!-- Javascript -->
 @yield('before-JSscripts')
+<script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 @yield('after-JSscripts')
 

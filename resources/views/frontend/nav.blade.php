@@ -4,18 +4,18 @@
         <a href="/" class="logo">LOGO YO</a>
         <nav>
             <div class="nav-control">
-                <ul>
-                    <li>Home</li>
+                <ul id='nav-control'>
+                    <li class="bottom-border-anim_gold"><a href="#">Home</a></li>
                     @if(!\Auth::guest())
-                    <li>Guest Page</li>
+                    <li><a class="bottom-border-anim_gold" href="#">Guest Page</a></li>
                     @if(count(\Auth::User()->member))
                     <div class="visible-xs visible-sm">
-                        <li>Member Page 1</li>
+                        <li><a class="bottom-border-anim_gold" href="#">Member Page 1</a></li>
                         @if(\Auth::User()->admin)
-                            <li>Admin Page</li>
+                            <li><a class="bottom-border-anim_gold" href="#">Admin Page</a></li>
                         @endif
                         <li class="divider"></li>
-                        <li>Sign Out</li>
+                        <li><a class="bottom-border-anim_gold" href="#">Sign Out</a></li>
                     </div>
                     @endif
                     @endif
@@ -38,7 +38,7 @@
                         <li><a href="{{route('admin.index')}}"><i class="fa fa-lock"></i> Admin</a></li>
                     @endif
                     <li class="divider"></li>
-                    <li><a href="{{route('auth.logout')}}"><i class="fa fa-power-off"></i> Sign Out</a></li>
+                    <li class="bottom-border-anim_gold"><a href="{{route('auth.logout')}}"><i class="fa fa-power-off"></i> Sign Out</a></li>
                 </ul>
             </div>
             @else
